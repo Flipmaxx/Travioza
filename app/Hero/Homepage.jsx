@@ -15,6 +15,7 @@ import DestinationSection from "../Components/Homepage/Destinations"
 import Footer from "../Components/Homepage/Footer"
 import Premium from "../Components/Homepage/Premium"
 import Culturals from "../Components/Homepage/Cultural"
+import BentoGallery from "../Components/Homepage/Gallary"
 
 export default function Homepage(){
    return(
@@ -27,6 +28,7 @@ export default function Homepage(){
        <About/>
        <TripCards/>
       <Premium/>
+      <BentoGallery/>
        <Whychoose/>
        <DestinationSection/>
        <Testimonials/>

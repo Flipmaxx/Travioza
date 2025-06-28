@@ -6,21 +6,21 @@ import 'aos/dist/aos.css';
 import { Compass } from 'lucide-react';
 
 const destinations = [
-  { country: 'France', region: 'Europe', title: 'Around Saint Tropez', price: '$4.99', image: './Images/DP.jpg' },
-  { country: 'Sri Lanka', region: 'Asia', title: 'Mysteries of Sigiriya', price: '$2.99', oldPrice: '$5.99', endsIn: '2d 3h 25m', image: 'https://oceanjar-new.s3.ap-south-1.amazonaws.com/sri_lanka_991797e44f.jpg' },
-  { country: 'Japan', region: 'Asia', title: 'Tokyo Explorer', price: '$3.99', image: 'https://lp-cms-production.imgix.net/2020-11/shutterstockRF_189118511.jpg?auto=format,compress&q=72&fit=crop' },
-  { country: 'Greece', region: 'Europe', title: 'Islands of Greece', price: '$4.49', oldPrice: '$6.49', endsIn: '1d 14h', image: 'https://internationalliving.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fwv75stsetqy3%2F18jOEJrhKM7WA81nkCKZV8%2F6f70df258ed1233d5c3a8e3f01298b06%2FGreece.jpg%3Fq%3D60%26fit%3Dfill%26fm%3Dwebp&w=3840&q=60' },
-  { country: 'Italy', region: 'Europe', title: 'Romance of Rome', price: '$3.50', image: 'https://hips.hearstapps.com/hmg-prod/images/positano-amalfi-coast-italy-royalty-free-image-1719519974.jpg?crop=0.668xw:1.00xh;0.0144xw,0&resize=1120:*' },
-  { country: 'Brazil', region: 'South America', title: 'Vibes of Rio', price: '$3.99', image: 'https://www.jacadatravel.com/_next/image/?url=https%3A%2F%2Fcdn.jacadatravel.com%2Fwp-content%2Fuploads%2Fbis-images%2F492407%2FMachu-Picchu-AdobeStock_53391024-3200x1800-f50_50.jpg&w=3840&q=100' },
-  { country: 'USA', region: 'North America', title: 'Grand Canyon Escape', price: '$5.49', image: 'https://colombianabroad.com/wp-content/uploads/vivir-usa.jpg' },
-  { country: 'Canada', region: 'North America', title: 'Maple Trails', price: '$4.99', oldPrice: '$6.00', endsIn: '5h 30m', image: 'https://explorewithalec.com/wp-content/uploads/2023/10/Wing-Lake-DJI_0483-scaled.jpg' },
-  { country: 'Vietnam', region: 'Asia', title: 'Ha Long Bay Adventures', price: '$2.89', image: 'https://dynamic-media.tacdn.com/media/photo-o/2e/e3/be/62/caption.jpg?w=800&h=600&s=1' },
-  { country: 'Australia', region: 'Oceania', title: 'Sydney Highlights', price: '$4.79', image: 'https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iZDshdZpXIHI/v0/-1x-1.webp' },
-  { country: 'Thailand', region: 'Asia', title: 'Bangkok Buzz', price: '$3.69', oldPrice: '$4.99', endsIn: '8h 10m', image: 'https://www.shutterstock.com/image-photo/lapse-aerial-view-bangkok-city-600nw-2315495803.jpg' },
-  { country: 'Indonesia', region: 'Asia', title: 'Bali Breeze', price: '$3.29', image: 'https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg' },
-  { country: 'New Zealand', region: 'Oceania', title: 'Queenstown Quest', price: '$5.19', image: 'https://w0.peakpx.com/wallpaper/529/652/HD-wallpaper-new-zealand-sea-summer-hills-tropics-patagonia.jpg' },
-  { country: 'South Africa', region: 'Africa', title: 'Cape Town Calling', price: '$4.39', image: 'https://www.shutterstock.com/shutterstock/videos/1088273235/thumb/12.jpg?ip=x480' },
-  { country: 'Iceland', region: 'Europe', title: 'Aurora Nights', price: '$6.29', oldPrice: '$8.99', endsIn: '3d 6h', image: 'https://res.cloudinary.com/icelandtours/g_auto,f_auto,c_auto,w_3840,q_auto:good/northern_lights_above_glacier_lagoon_v2osk_unsplash_7d39ca647f.jpg' },
+  { country: 'France', region: 'Kashmir', title: 'Where Beauty Meets Serenity', price: '₹ 65,000', image: './Images/DP.jpg', oldPrice: '5 days', },
+  { country: 'Sri Lanka', region: 'Kulu Manali', title: ' Himalayan Serenity and Snowy Escapes', price: '₹ 67,750', oldPrice: '7 days', endsIn: '2d 3h 25m', image: './Images/DP2.jpg' },
+  { country: 'Japan', region: 'Andaman', title: 'Turquoise Waters & Tropical Calm', price: '₹ 64,780',oldPrice: '5 days', image: './Images/DP3.jpg' },
+  { country: 'Greece', region: 'Delhi Agra Jaipur', title: 'Where Heritage Meets Hustle', price: '₹ 56,800', oldPrice: '5 days', endsIn: '1d 14h', image: './Images/DP4.jpg' },
+  { country: 'Italy', region: 'Goa', title: 'Sunsets, Shores & Soulful Vibes', price: '₹ 37,860', oldPrice: '3 days',image: './Images/DP5.jpg' },
+  { country: 'Brazil', region: 'Assam Meghalaya', title: 'Abode of Clouds and Hidden Wonders', price: '67,900',oldPrice: '6 days',  image: './Images/DP6.jpg' },
+  { country: 'USA', region: 'Leh Ladakh', title: 'Land of High Passes and Timeless Monasteries', price: '₹ 75,000',oldPrice: '6 days',  image: './Images/DP7.jpg' },
+  { country: 'Canada', region: 'Rajastan', title: 'Royal Heritage and Desert Wonders', price: '₹ 71,000', oldPrice: '8 days', endsIn: '5h 30m', image: './Images/DP8.jpg' },
+  { country: 'Vietnam', region: 'Mookambika', title: 'Ha Long Bay Adventures', price: '₹ 70,000', image: './Images/DP9.jpg' },
+  { country: 'Australia', region: 'Oceania', title: 'Sydney Highlights', price: '₹ 70,000', image: './Images/DP10.webp' },
+  { country: 'Thailand', region: 'Asia', title: 'Bangkok Buzz', price: '₹ 70,000', oldPrice: '₹ 70,000', endsIn: '8h 10m', image: './Images/DP11.webp' },
+  { country: 'Indonesia', region: 'Asia', title: 'Bali Breeze', price: '₹ 70,000', image: './Images/DP12.jpg' },
+  { country: 'New Zealand', region: 'Oceania', title: 'Queenstown Quest', price: '₹ 70,000', image: './Images/DP13.jpg' },
+  { country: 'South Africa', region: 'Africa', title: 'Cape Town Calling', price: '₹ 70,000', image: './Images/DP14.webp' },
+  { country: 'Iceland', region: 'Europe', title: 'Aurora Nights', price: '$6.29', oldPrice: '₹ 70,000', endsIn: '3d 6h', image: './Images/DP15.webp' },
   
 ];
 
@@ -59,8 +59,8 @@ export default function DestinationsPage() {
                 )}
                 {item.oldPrice ? (
                   <div className="flex gap-1 justify-end bg-black/80 px-3 py-1 rounded-full">
-                    <span className="line-through">{item.oldPrice}</span>
-                    <span>{item.price}</span>
+                    <span className="">{item.price}</span>
+                    <span>{item.oldPrice}</span>
                   </div>
                 ) : (
                   <div className="bg-black/80 px-3 py-1 rounded-full">{item.price}</div>
@@ -69,10 +69,10 @@ export default function DestinationsPage() {
            <div className="absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 text-white drop-shadow-md">
   <div className="flex items-center gap-2 mb-1">
     <Compass className="w-4 h-4" />
-    <span className="text-xs uppercase tracking-wide">Star Guide</span>
+    <span className="text-xs uppercase tracking-wide">Travioza</span>
   </div>
-  <h3 className="text-lg font-semibold">{item.title}</h3>
-  <p className="text-sm text-gray-200">{item.country}, {item.region}</p>
+  <h3 className="text-lg font-semibold">{item.region}</h3>
+  <p className="text-sm text-gray-200"> {item.title}</p>
 </div>
 
             </div>

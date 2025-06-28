@@ -16,7 +16,6 @@ export default function Navbar() {
     };
     window.addEventListener('scroll', handleScroll);
 
-    // Lock scroll when mobile menu is open
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 
     return () => {
@@ -36,12 +35,9 @@ export default function Navbar() {
         ${scrolled ? 'bg-black/30 max-w-7xl mx-auto' : 'bg-black/20 max-w-full'}`}
     >
       <div className="mx-auto px-4 flex items-center justify-between px-3">
-        {/* Logo */}
         <Link href="/">
           <img src="/Images/LOGO.png" alt="Logo" className="w-auto h-9" />
         </Link>
-
-        {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 font-medium text-sm">
           <Link href="/Destinations" className="hover:text-[#FFCB05] transition">Destinations</Link>
           <Link href="/Services" className="hover:text-[#FFCB05] transition">Services</Link>
@@ -49,7 +45,6 @@ export default function Navbar() {
           <Link href="/Contact" className="hover:text-[#FFCB05] transition">Contact</Link>
         </div>
 
-        {/* Desktop Icons */}
         <div className="hidden md:flex items-center space-x-4">
           <button className="p-2 rounded-full hover:bg-white/20 transition">
             <Search className="w-5 h-5" />
