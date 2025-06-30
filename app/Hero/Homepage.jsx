@@ -31,7 +31,7 @@ export default function Homepage(){
       <BentoGallery/>
        <Whychoose/>
        <DestinationSection/>
-       <Testimonials/>
+       {/* <Testimonials/> */}
        <TravelArticles/>
 
         
