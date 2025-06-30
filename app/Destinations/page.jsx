@@ -14,13 +14,11 @@ const destinations = [
   { country: 'Brazil', region: 'Assam Meghalaya', title: 'Abode of Clouds and Hidden Wonders', price: '67,900',oldPrice: '6 days',  image: './Images/DP6.jpg' },
   { country: 'USA', region: 'Leh Ladakh', title: 'Land of High Passes and Timeless Monasteries', price: '₹ 75,000',oldPrice: '6 days',  image: './Images/DP7.jpg' },
   { country: 'Canada', region: 'Rajastan', title: 'Royal Heritage and Desert Wonders', price: '₹ 71,000', oldPrice: '8 days', endsIn: '5h 30m', image: './Images/DP8.jpg' },
-  { country: 'Vietnam', region: 'Mookambika', title: 'Ha Long Bay Adventures', price: '₹ 70,000', image: './Images/DP9.jpg' },
-  { country: 'Australia', region: 'Oceania', title: 'Sydney Highlights', price: '₹ 70,000', image: './Images/DP10.webp' },
-  { country: 'Thailand', region: 'Asia', title: 'Bangkok Buzz', price: '₹ 70,000', oldPrice: '₹ 70,000', endsIn: '8h 10m', image: './Images/DP11.webp' },
-  { country: 'Indonesia', region: 'Asia', title: 'Bali Breeze', price: '₹ 70,000', image: './Images/DP12.jpg' },
-  { country: 'New Zealand', region: 'Oceania', title: 'Queenstown Quest', price: '₹ 70,000', image: './Images/DP13.jpg' },
-  { country: 'South Africa', region: 'Africa', title: 'Cape Town Calling', price: '₹ 70,000', image: './Images/DP14.webp' },
-  { country: 'Iceland', region: 'Europe', title: 'Aurora Nights', price: '$6.29', oldPrice: '₹ 70,000', endsIn: '3d 6h', image: './Images/DP15.webp' },
+  { country: 'Vietnam', region: 'Mookambika', title: 'Journey to the Goddess', price: '₹ 10,000',oldPrice: '4 days', image: './Images/DP9.jpg' },
+  { country: 'Australia', region: 'Dubai', title: 'The Golden Mirage', price: '₹ 73,000',oldPrice: '5 days', image: './Images/DP10.jpg' },
+  { country: 'Thailand', region: 'Thailand', title: 'Islands of Serenity, Heart of Adventure', price: '₹ 70,000', oldPrice: '5 days', endsIn: '8h 10m', image: './Images/DP11.jpg' },
+  { country: 'USA', region: 'USA', title: 'Explore the Spirit of America', price: '₹ 5,65,000',oldPrice: '15 days', image: './Images/DP12.jpg' },
+ 
   
 ];
 
@@ -79,9 +77,20 @@ export default function DestinationsPage() {
           ))}
         </div>
         <div className="mt-16 text-center" data-aos="fade-up" data-aos-delay="1000">
-          <button className="px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-gray-900 transition">
-            Start Your Journey
-          </button>
+      <button
+  onClick={() => {
+    const useWhatsApp = window.confirm("Would you like to contact via WhatsApp?\nClick 'Cancel' for Email.");
+    if (useWhatsApp) {
+      window.location.href = "https://wa.me/919876543210";
+    } else {
+      window.location.href = "mailto:traviozaholidays@gmail.com.com"; 
+    }
+  }}
+  className="px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-[#FFCB05] transition"
+>
+  Start Your Journey
+</button>
+
         </div>
       </div>
     </section>
