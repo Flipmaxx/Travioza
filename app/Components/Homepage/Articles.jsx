@@ -54,15 +54,6 @@ export default function TravelArticles() {
     },
   ];
 
-  const animationVariants = [
-    'fade-up',
-    'zoom-in',
-    'flip-left',
-    'slide-up',
-    'fade-right',
-    'flip-up',
-  ];
-
   return (
     <div className="max-w-7xl mx-auto px-4 lg:px-9 xl:px-0 py-16">
       <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-12">
@@ -90,8 +81,7 @@ export default function TravelArticles() {
         {articles.map((article, i) => (
           <div
             key={i}
-            data-aos={animationVariants[i % animationVariants.length]}
-            data-aos-delay={i * 100}
+            data-aos="fade-up"
             className="cursor-default"
           >
             <div className="w-full h-96 relative rounded-lg overflow-hidden mb-4">
