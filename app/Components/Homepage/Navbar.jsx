@@ -39,6 +39,7 @@ export default function Navbar() {
           <img src="/Images/LOGO.png" alt="Logo" className="w-auto h-9" />
         </Link>
         <div className="hidden md:flex space-x-6 font-medium text-sm">
+           <Link href="/" className="hover:text-[#FFCB05] transition">Home</Link>
           <Link href="/Destinations" className="hover:text-[#FFCB05] transition">Destinations</Link>
           <Link href="/Services" className="hover:text-[#FFCB05] transition">Services</Link>
           <Link href="/Eventes" className="hover:text-[#FFCB05] transition">Events</Link>
@@ -54,15 +55,12 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle menu" className="text-2xl">
             {isOpen ? <HiX /> : <HiMenu />}
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -79,7 +77,7 @@ export default function Navbar() {
             >
               <HiX />
             </button>
-
+            <Link onClick={toggleMenu} href="/" className="text-3xl font-semibold hover:underline">Home</Link>
             <Link onClick={toggleMenu} href="/Destinations" className="text-3xl font-semibold hover:underline">Destinations</Link>
             <Link onClick={toggleMenu} href="/Services" className="text-3xl font-semibold hover:underline">Services</Link>
             <Link onClick={toggleMenu} href="/Eventes" className="text-3xl font-semibold hover:underline">Events</Link>

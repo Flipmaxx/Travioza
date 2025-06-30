@@ -23,7 +23,7 @@ export default function Homepage(){
          <div>
        <Landing/>
        <Culturals/>
-       <LogoCarousel/>
+       {/* <LogoCarousel/> */}
               <Activities/>
        <About/>
        <TripCards/>

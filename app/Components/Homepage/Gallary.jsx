@@ -74,12 +74,18 @@ export default function TravelGallery() {
           Time to create your story?
         </p>
         <motion.button
-          className="bg-[#FFCB05] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Let’s Go
-        </motion.button>
+  onClick={() => {
+    const useWhatsApp = window.confirm("Would you like to contact via WhatsApp?\nClick 'Cancel' for Email.");
+    if (useWhatsApp) {
+      window.location.href = "https://wa.me/919876543210"; 
+    } else {
+      window.location.href = "mailto:traviozaholidays@gmail.com"; 
+    }
+  }}
+  className="px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-[#FFCB05] transition"
+>
+  Let's Go
+ </motion.button>
       </motion.div>
     </section>
   );

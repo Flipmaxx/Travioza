@@ -142,7 +142,7 @@ export default function Landing() {
         </div>
         <div className="flex flex-col items-end w-full mt-4 sm:mt-6 md:mt-8">
           <div className="w-full overflow-x-auto pb-2 sm:pb-4 hide-scrollbar">
-            <div className="flex gap-2 sm:gap-3 md:gap-4 w-max ml-auto">
+            <div className="flex gap-2 sm:gap-3 md:gap-4 max-w-lg lg:max-w-xl xl:max-w-5xl ml-auto">
               {orderedDestinations.map((dest, index) => {
                 const originalIndex = (activeIndex + index) % destinations.length;
                 const isActive = currentDestination.name === dest.name;

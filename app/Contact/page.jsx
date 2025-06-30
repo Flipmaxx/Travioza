@@ -93,9 +93,9 @@ export default function ContactSection() {
           </div>
 
           <div className="space-y-6" data-aos="fade-up">
-            <div className="bg-[#FFCB05] text-white rounded-2xl p-6 text-center">
-              <div className="relative w-24 h-24 mx-auto mb-4">
-                <Image src="/Images/LOGO.png" alt="Support" fill className="rounded-full object-cover border-4 border-yellow-400" />
+            <div className="bg-black text-white rounded-2xl p-6 text-center">
+              <div className="relative w-full h-20 md:h-30 lg:h-20 mx-auto mb-4">
+                <Image src="/Images/LOGO.png" alt="Support" fill className=" bg-cover " />
               </div>
               <h4 className="text-xl font-semibold">Travioza Support</h4>
               <p className="text-sm text-white/90">Our adventure experts are here to help</p>
